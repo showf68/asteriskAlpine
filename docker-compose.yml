@@ -6,15 +6,6 @@ services:
     container_name: alpbxSimple
     network_mode: host
     volumes:
-      - /mnt/remoteAsterisk:/mnt/remoteAsterisk
-#      - /mnt/remoteAsterisk/AGI/repo.i-call.me/astConf/extensions.conf:/etc/asterisk/extensions.conf
-#      - /mnt/localAsterisk/AGI:/var/lib/asterisk/AGI
-#      - /mnt/localAsterisk/showf:/usr/share/php/vendor/showf68/showf/
-#      - /mnt/localAsterisk/user:/var/lib/asterisk/sounds/user
-#      - mysqalp:/data/
       - /sys/fs/cgroup
     environment:
       - ASTPORT=4060
-
-#volumes:
-#  mysqalp3:
